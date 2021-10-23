@@ -1,6 +1,6 @@
 import classes from './AboutPage.module.scss'
 import React from 'react'
-import background from '../../assets/AboutPage_banner.jpg'
+import bannerBackground from '../../assets/AboutPage_banner.jpg'
 import {faInstagram, faFacebook, faTelegram} from '@fortawesome/free-brands-svg-icons'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {Map} from '../../components/Map'
@@ -9,7 +9,7 @@ export const AboutPage = () => {
     return (
         <div className="wrapper">
             <div className={classes.banner}>
-                <img className={classes.banner__bg} src={background} />
+                <img className={classes.banner__bg} src={bannerBackground} />
                 <h1>About us</h1>
             </div>
             <div className={classes.about}>

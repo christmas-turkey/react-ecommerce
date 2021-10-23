@@ -13,7 +13,7 @@ export const ProductsList = ({title, products}) => {
             <div className={classes.productsContainer}>
                 {products 
                   ?  
-                  products.map(item => <ProductCard productObject={item} key={item.id} />)
+                  products.map(obj => <ProductCard productObject={obj} key={obj.id} />)
                   :
                   new Array(5).fill(0).map((_, index) => <ProductLoading key={index} />)
                 }

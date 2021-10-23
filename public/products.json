@@ -62,8 +62,7 @@
         "popularity": 14,
         "weight": "190g",
         "price": 10.50
-    }
-    ,
+    },
     {
         "id": 43433434,
         "name": "Magic mango smoothie",
@@ -74,5 +73,47 @@
         "popularity": 54,
         "weight": "0.250L",
         "price": 4.99
+    },
+    {
+        "id": 4374899,
+        "name": "Itachi",
+        "composition": "Nori, japanese mayonaise, shrimps, avocado, cheese",
+        "image": "https://ninjasushi.com.ua/img/579.png",
+        "category": "sushi",
+        "popularity": 122,
+        "weight": "310g",
+        "price": 9.99
+    },
+    {
+        "id": 4348734,
+        "name": "Yamamoto",
+        "composition": "Salmon, nori, rice, cheese, avocado, caviar, shrimps",
+        "image": "https://ninjasushi.com.ua/img/1010.png",
+        "category": "sushi",
+        "popularity": 102,
+        "new": true,
+        "weight": "320g",
+        "price": 12.99
+    },
+    {
+        "id": 54784783,
+        "name": "Tartar mix",
+        "composition": "Salmon, tuna, onion, japanese mayonaise",
+        "image": "https://ninjasushi.com.ua/img/3103.png",
+        "category": "appetizers",
+        "popularity": 122,
+        "weight": "225g",
+        "price": 7.69
+    },
+    {
+        "id": 897685673,
+        "name": "Strawberry smoothie",
+        "composition": "Apple juice, apple puree, banana puree, orange juice",
+        "image": "https://ninjasushi.com.ua/img/3012.png",
+        "category": "beverages",
+        "popularity": 170,
+        "discount": "-11%",
+        "weight": "0.300L",
+        "price": 5.29
     }
 ]

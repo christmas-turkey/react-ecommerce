@@ -1,4 +1,4 @@
-import classes from './CornerCartLink.module.scss'
+import classes from './MobileCartLink.module.scss'
 import React from 'react'
 import {faCartArrowDown} from '@fortawesome/free-solid-svg-icons'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
@@ -6,7 +6,7 @@ import classnames from 'classnames'
 import {NavLink} from 'react-router-dom'
 import {useSelector} from 'react-redux'
 
-export const CornerCartLink = () => {
+export const MobileCartLink = () => {
     
     const totalCartItems = useSelector(state => state.cart.totalQuantity)
     

@@ -9,9 +9,9 @@ const initialState = {
 const _removeCartItem = (id, items) => {
     let newItems = {}
 
-    Object.values(items).forEach(item => {
-        if (item.id !== id) {
-            newItems[item.id] = item
+    Object.values(items).forEach(obj => {
+        if (obj.id !== id) {
+            newItems[obj.id] = obj
         }
     })
 
@@ -21,7 +21,7 @@ const _removeCartItem = (id, items) => {
 const _getTotalPrice = items => {
     return (
         Object.values(items)
-          .reduce((total, item) => total + item.price * item.quantity, 0)
+          .reduce((total, obj) => total + obj.price * obj.quantity, 0)
           .toFixed(2)
         )
 }
@@ -29,7 +29,7 @@ const _getTotalPrice = items => {
 const _getTotalQuantity = items => {
     return (
         Object.values(items)
-          .reduce((total, item) => total + item.quantity, 0)
+          .reduce((total, obj) => total + obj.quantity, 0)
     )
 }
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import classes from "./CartProductCard.module.scss"
+import classes from "./CartItem.module.scss"
 import classnames from 'classnames'
 import {faTimes, faPlus, faMinus} from '@fortawesome/free-solid-svg-icons'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
@@ -7,7 +7,7 @@ import PropTypes from 'prop-types'
 import {useDispatch} from 'react-redux'
 import {removeCartItem, plusCartItem, minusCartItem} from '../../redux/actions/cart'
 
-export const CartProductCard = ({productObject}) => {
+export const CartItem = ({productObject}) => {
 
     const dispatch = useDispatch()
 
@@ -48,6 +48,6 @@ export const CartProductCard = ({productObject}) => {
     )
 }
 
-CartProductCard.propTypes = {
+CartItem.propTypes = {
     productObject: PropTypes.object
 }

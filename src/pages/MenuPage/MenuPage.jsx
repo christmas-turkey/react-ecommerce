@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import {ProductsList} from '../../components/ProductsList'
-import {CornerCartLink} from '../../components/CornerCartLink'
+import {MobileCartLink} from '../../components/MobileCartLink'
 import {useSelector} from 'react-redux'
 
 export const MenuPage = () => {
@@ -21,7 +21,7 @@ export const MenuPage = () => {
 
     return (
         <div className="wrapper">
-            <CornerCartLink />
+            <MobileCartLink />
             <ProductsList products={sushiProducts} title="Sushi" />
             <ProductsList products={beveragesProducts} title="Beverages" />
             <ProductsList products={appetizersProducts} title="Appetizers" />

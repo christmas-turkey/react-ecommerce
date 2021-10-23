@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import {useParams} from 'react-router-dom'
 import {ProductsList} from '../../components/ProductsList'
-import {CornerCartLink} from '../../components/CornerCartLink'
+import {MobileCartLink} from '../../components/MobileCartLink'
 import {useSelector} from 'react-redux'
 
 export const CategoryPage = () => {
@@ -12,15 +12,15 @@ export const CategoryPage = () => {
 
     useEffect(() => {
         if (products) {
-            setCategoryProducts(products.filter(item => item.category === categoryName))
+            setCategoryProducts(products.filter(obj => obj.category === categoryName))
         }
-    }, [])
+    }, [categoryName])
 
     const capitalizedTitle = `${categoryName.charAt(0).toUpperCase()}${categoryName.slice(1, categoryName.length)}`
 
     return (
         <div className="wrapper">
-            <CornerCartLink />
+            <MobileCartLink />
             <ProductsList products={categoryProducts} title={capitalizedTitle} />
         </div>
     )

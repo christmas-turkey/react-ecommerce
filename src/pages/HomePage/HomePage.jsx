@@ -8,7 +8,7 @@ import appetizersImg from '../../assets/appetizers.png'
 import sushiImg from '../../assets/sushi.png'
 import bannerBackground from '../../assets/MainPage_banner.jpg'
 import {ProductsList} from '../../components/ProductsList'
-import {CornerCartLink} from '../../components/CornerCartLink'
+import {MobileCartLink} from '../../components/MobileCartLink'
 import {useSelector} from 'react-redux'
 
 export const HomePage = () => {
@@ -29,7 +29,7 @@ export const HomePage = () => {
 
     return (
         <div className="wrapper">
-            <CornerCartLink />
+            <MobileCartLink />
             <div className={classes.banner}>
                 <img alt="Banner" className={classes.banner__bg} src={bannerBackground} />
                 <div className={classes.banner__content}>
