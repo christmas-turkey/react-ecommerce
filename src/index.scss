@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap');
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Balsamiq Sans', cursive;
+}
+
+body {
+  background-color: #f3f3f3;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      background-color: lightgray;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 20px;
+        background-color: #4d4d4d;
+    }
+}
+
+button, a {
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.wrapper {
+  padding-top: 120px;
+}
+
+.counter {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.delimeter {
+  height: 2px;
+  width: 100%;
+  background-color: #D7D7D7;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.transition {
+  transition: opacity 0.4s;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+@mixin button {
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 30px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: background-color 0.5s;
+
+  svg {
+    margin-right: 10px;
+  }
+}
+
+.button-red {
+  @include button();
+  background-color: #85051C;
+
+  &:hover {
+    background-color: darken(#85051C, 10%);
+  }
+
+  &:active {
+    background-color: darken(#85051C, 15%);
+  }
+}
+
+.button-orange {
+  @include button();
+  background-color: #FF9900;
+
+  &:hover {
+    background-color: darken(#FF9900, 10%);
+  }
+
+  &:active {
+    background-color: darken(#FF9900, 15%);
+  }
+}

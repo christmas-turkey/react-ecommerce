@@ -1,0 +1,70 @@
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+
+    &__bg {
+        width: 100vw;
+        height: 400px;
+        object-fit: cover;
+        z-index: -1;
+        filter: blur(5px);
+        position: absolute;
+    }
+
+    h1 {
+        font-size: 64px;
+        color: #fff;
+    }
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+
+    &__card {
+        transform: translateY(-100px);
+        box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.5);
+        background-color: #fff;
+        width: 400px;
+        padding: 30px;
+
+        * {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__social {
+        svg {
+            color: #000;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+    }
+
+    &__map {
+        width: 50vw;
+        height: 400px;
+        margin-top: 50px;
+    }
+
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;
+        align-items: center;
+
+        &__map {
+            margin-top: 0;
+        }
+
+        &__map, &__card {
+            width: 80vw;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        &__map, &__card {
+            width: 90vw;
+        }
+    }
+}

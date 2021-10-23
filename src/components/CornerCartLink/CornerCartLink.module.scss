@@ -1,0 +1,31 @@
+.container {
+    z-index: 2;
+    bottom: 30px;
+    left: 30px;
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #85051C;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.5);
+    display: none;
+
+    svg {
+        color: #fff;
+    }
+
+    .counter {
+        width: 35px;
+        height: 35px;
+        color: #85051C;
+        position: absolute;
+        left: 50px;
+        top: 40px;
+    }
+
+    @media screen and (max-width: 800px) {
+        display: flex;
+    }
+}

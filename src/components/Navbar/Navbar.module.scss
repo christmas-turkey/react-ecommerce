@@ -1,0 +1,135 @@
+.navbar {
+    z-index: 2;
+    position: fixed;
+    padding-left: 70px;
+    padding-right: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: #fff;
+    box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.25);
+
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+            font-style: italic;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        &__phoneNumber {
+            color: #000;
+            font-weight: bold;
+            font-size: 14px;
+            svg {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    &__link {
+        margin-right: 10px;
+        margin-left: 10px;
+        color: #000;
+        letter-spacing: 2px;
+
+        &.active {
+            font-weight: bold;
+        }
+
+    }
+
+    &__cart {
+        width: 160px;
+
+        &__counter {
+            margin-left: 10px;
+            letter-spacing: 0;
+            color: #FF9900;
+        }
+    }
+
+    &__burger {
+        display: none;
+    }
+
+    @media screen and (max-width: 800px) {
+        &__link, &__cart {
+            display: none;
+        }
+
+        &__burger {
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 450px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+}
+
+.drawer {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 70vw;
+    z-index: 3;
+    background-color: #fff;
+    box-shadow: -5px 0 30px 2px rgba(0, 0, 0, 0.25);
+
+    &__wrapper {
+        padding: 20px;
+    }
+
+    &_enter {
+        width: 0 !important;
+      }
+    &_enterActive {
+      width: 70vw !important;
+      transition: width 550ms;
+    }
+    &_exit {
+      width: 70vw !important;
+    }
+    &_exitActive {
+      width: 0 !important;
+      transition: width 550ms;
+    }
+
+    &__link {
+        display: block;
+        margin-top: 15px;
+        color: #000;
+        letter-spacing: 2px;
+
+        &.active {
+            font-weight: bold;
+        }
+    }
+
+    &__categories {
+        &__link {
+            color: #85051C;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+
+            span {
+                font-size: 18px;
+                letter-spacing: 2px;
+            }
+
+            svg {
+                margin-right: 15px;
+            }
+        }
+    }
+}

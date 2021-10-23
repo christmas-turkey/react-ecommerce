@@ -1,0 +1,78 @@
+[
+    {
+        "id": 43268234387,
+        "name": "Philadelphia with salmon",
+        "composition": "Salmon, nori, cucumber, rice, cheese",
+        "image": "https://ninjasushi.com.ua/img/452.png",
+        "new": true,
+        "category": "sushi",
+        "popularity": 101,
+        "weight": "320g",
+        "price": 10.99
+    },
+    {
+        "id": 237837237,
+        "name": "Philadelphia with eel",
+        "composition": "Nori, cucumber, rice, unagi sauce, eel",
+        "image": "https://ninjasushi.com.ua/img/102-600x600.png",
+        "type": "sushi",
+        "popularity": 23,
+        "discount": "-20%",
+        "weight": "320g",
+        "price": 14.99
+    },
+    {
+        "id": 6433643,
+        "name": "Kratos",
+        "composition": "Nori, rice, cheese, eel, caviar, snow crab, sprouting onion",
+        "image": "https://ninjasushi.com.ua/img/577.png",
+        "new": true,
+        "weight": "310g",
+        "category": "sushi",
+        "popularity": 58,
+        "price": 12.99
+    },
+    {
+        "id": 54533344,
+        "name": "Himavari",
+        "composition": "Salmon, nori, rice, unagi sauce, shrimp, parmesan",
+        "image": "https://ninjasushi.com.ua/img/578.png",
+        "category": "sushi",
+        "popularity": 140,
+        "weight": "320g",
+        "price": 11.99
+    },
+    {
+        "id": 3484394893,
+        "name": "Salmon tartare with halapehno",
+        "composition": "Salmon, mango, japanese mayonaise, halapehno",
+        "image": "https://ninjasushi.com.ua/img/3101.png",
+        "category": "appetizers",
+        "popularity": 10,
+        "weight": "180g",
+        "price": 9.50
+    },
+    {
+        "id": 843784383,
+        "name": "Salmon tartare with mango",
+        "composition": "Salmon, mango, japanese mayonaise, kimchi sauce",
+        "image": "https://ninjasushi.com.ua/img/3100.png",
+        "category": "appetizers",
+        "discount": "-14%",
+        "popularity": 14,
+        "weight": "190g",
+        "price": 10.50
+    }
+    ,
+    {
+        "id": 43433434,
+        "name": "Magic mango smoothie",
+        "composition": "Apple juice, apple puree, banana puree, orange juice",
+        "image": "https://ninjasushi.com.ua/img/3011.png",
+        "category": "beverages",
+        "new": true,
+        "popularity": 54,
+        "weight": "0.250L",
+        "price": 4.99
+    }
+]
