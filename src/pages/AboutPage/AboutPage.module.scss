@@ -1,16 +1,10 @@
 .banner {
-    display: flex;
     justify-content: center;
     align-items: center;
     height: 400px;
 
     &__bg {
-        width: 100vw;
         height: 400px;
-        object-fit: cover;
-        z-index: -1;
-        filter: blur(5px);
-        position: absolute;
     }
 
     h1 {
@@ -30,16 +24,16 @@
         width: 400px;
         padding: 30px;
 
-        * {
+        > * {
             margin-bottom: 20px;
         }
-    }
 
-    &__social {
-        svg {
-            color: #000;
-            margin-right: 15px;
-            cursor: pointer;
+        &__social {
+            svg {
+                color: #000;
+                margin-right: 15px;
+                cursor: pointer;
+            }
         }
     }
 

@@ -36,19 +36,25 @@
         color: #4d4d4d;
     }
 
-    &__description {
+    &__details {
         width: 80%;
         margin-top: 20px;
         display: flex;
         justify-content: space-between;
-    }
 
-    &__weight, &__price {
-        font-size: 24px;
+        &__weight, &__price {
+            font-size: 24px;
+        }
     }
 
     &__button {
         margin-top: 25px;
+        
+        &__counter {
+            margin-right: 10px;
+            color: #85051C;
+            letter-spacing: 0;
+        }
     }
 
     &__new, &__discount {
@@ -70,12 +76,6 @@
 
     &__new {
         background-color: #2FB600;
-    }
-
-    &__counter {
-        margin-right: 10px;
-        color: #85051C;
-        letter-spacing: 0;
     }
 
     @media screen and (max-width: 800px) {

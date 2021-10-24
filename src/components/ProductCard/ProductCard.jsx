@@ -35,13 +35,13 @@ export const ProductCard = ({productObject}) => {
             {productObject.composition && (
                 <p className={classes.product__composition}>{productObject.composition}</p>
             )}
-            <div className={classes.product__description}>
-                <h3 className={classes.product__weight}>{productObject.weight}</h3>
-                <h3 className={classes.product__price}>{productObject.price}$</h3>
+            <div className={classes.product__details}>
+                <h3 className={classes.product__details__weight}>{productObject.weight}</h3>
+                <h3 className={classes.product__details__price}>{productObject.price}$</h3>
             </div>
             <button onClick={addProductToCart} className={classnames('button-red', classes.product__button)}>
                 {cartProductObject 
-                 ?  <div className={classnames('counter', classes.product__counter)}>
+                 ?  <div className={classnames('counter', classes.product__button__counter)}>
                       {cartProductObject.quantity}
                     </div>
                  :  <FontAwesomeIcon icon={faCartPlus} />

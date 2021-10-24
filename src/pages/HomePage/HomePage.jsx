@@ -10,6 +10,7 @@ import bannerBackground from '../../assets/MainPage_banner.jpg'
 import {ProductsList} from '../../components/ProductsList'
 import {MobileCartLink} from '../../components/MobileCartLink'
 import {useSelector} from 'react-redux'
+import classnames from 'classnames'
 
 export const HomePage = () => {
 
@@ -30,7 +31,7 @@ export const HomePage = () => {
     return (
         <div className="wrapper">
             <MobileCartLink />
-            <div className={classes.banner}>
+            <div className={classnames('banner', classes.banner)}>
                 <img alt="Banner" className={classes.banner__bg} src={bannerBackground} />
                 <div className={classes.banner__content}>
                     <h1>Best sushi in your city</h1>

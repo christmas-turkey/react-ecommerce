@@ -25,75 +25,75 @@
         cursor: pointer;
     }
 
-    &__description {
+    &__mainContent {
         display: flex;
         align-items: center;
         height: 60%;
         justify-content: space-between;
+
+        &__img {
+            width: 100px;
+            height: 100px;
+        }
     }
 
-    &__text {
+    &__description {
         width: 60%;
+
+        &__name {
+            letter-spacing: 2px;
+            word-wrap: break-word;
+        }
+    
+        &__composition {
+            word-wrap: break-word;
+            letter-spacing: 1px;
+            color: #4d4d4d;
+            margin-top: 10px;
+            font-size: 14px;
+        }
     }
 
-    &__img {
-        width: 100px;
-        height: 100px;
-    }
-
-    &__name {
-        letter-spacing: 2px;
-        word-wrap: break-word;
-    }
-
-    &__composition {
-        word-wrap: break-word;
-        letter-spacing: 1px;
-        color: #4d4d4d;
-        margin-top: 10px;
-        font-size: 14px;
-    }
-
-    &__configuration {
+    &__details {
         display: flex;
         justify-content: space-between;
         padding-left: 30px;
         padding-right: 30px;
         align-items: center;
 
+        &__weight {
+            color: #4d4d4d;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+    
+        &__price {
+            font-size: 22px;
+        }
+    
+        &__quantity {
+            display: flex;
+            align-items: center;
+    
+            h6 {
+                font-size: 18px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+    
+            button {
+                width: 40px;
+                height: 40px;
+                background-color: #fff;
+                border-radius: 50%;
+                box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+            }
+        }
+
         @media screen and (max-width: 430px) {
             margin-top: 20px;
             padding-left: 10px;
             padding-right: 10px;
-        }
-    }
-
-    &__weight {
-        color: #4d4d4d;
-        font-size: 14px;
-        margin-bottom: 5px;
-    }
-
-    &__price {
-        font-size: 22px;
-    }
-
-    &__quantity {
-        display: flex;
-        align-items: center;
-
-        h6 {
-            font-size: 18px;
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-
-        button {
-            width: 40px;
-            height: 40px;
-            background-color: #fff;
-            border-radius: 50%;
-            box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
         }
     }
 }
